@@ -29,7 +29,7 @@
           <template v-slot:activator="{ on }">
             <v-text-field
               v-model="time.startTime"
-              label="Select Start Time"
+              label="Start Time"
               v-on="on"
             />
           </template>
@@ -49,11 +49,7 @@
           min-width="auto"
         >
           <template v-slot:activator="{ on }">
-            <v-text-field
-              v-model="time.endTime"
-              label="Select End Time"
-              v-on="on"
-            />
+            <v-text-field v-model="time.endTime" label="End Time" v-on="on" />
           </template>
           <v-time-picker
             v-model="time.endTime"
